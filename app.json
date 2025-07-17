@@ -1,29 +1,37 @@
 {
   "expo": {
-    "name": "eatsmartindia",
+    "name": "Eatsmart India",
     "slug": "eatsmartindia",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "firebase": {
+        "apiKey": "AIzaSyARd8PmSp22OUWhwTN_gX-W-iiuJZM0GxA",
+        "authDomain": "eatsmartindia-16e75.firebaseapp.com",
+        "projectId": "eatsmartindia-16e75",
+        "storageBucket": "eatsmartindia-16e75.firebasestorage.app",
+        "messagingSenderId": "825618368317",
+        "appId": "1:825618368317:web:d4e84837c44d54fbe66754",
+        "measurementId": "G-SHNE6XE5CZ"
+      }
     },
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.yourcompany.eatsmartindia"
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+      "package": "com.yourcompany.eatsmartindia"
     }
   }
 }
